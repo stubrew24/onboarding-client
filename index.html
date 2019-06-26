@@ -9,6 +9,60 @@
 <body>
     <h1>Onboarding Client</h1>
 
+    <div style="display: block; clear: both;">
+        <div style="display: block; float: left; width: 240px; margin-right: 100px;">
+            <h2>Users</h2>
+            <ul id="usersList"></ul>
+        </div>
+
+        <div style="display: block; float: left; width: 240px; margin-right: 100px;">
+            <h2>Tasks</h2>
+            <ul id="tasksList"></ul>
+        </div>
+
+        <div style="display: block; float: left; width: 240px; margin-right: 100px;">
+            <h2>Progress</h2>
+            <ul id="progressList"></ul>
+        </div>
+    </div>
+
+
+    <div style="display: block; clear: both;">
+        <div style="display: block; float: left; width: 240px; margin-right: 100px;">
+            <h2>New User</h2>
+            <form id="addUserForm">
+                <label for="firstName">First Name:</label><br />
+                <input type="text" name="firstName" /><br />
+                <label for="lastName">Last Name:</label><br />
+                <input type="text" name="lastName" /><br />
+                <label for="email">Email:</label><br />
+                <input type="text" name="email" /><br />
+                <label for="startDate">Start Date:</label><br />
+                <input type="text" name="startDate" /><br />
+
+                <input type="submit" name="submit" value="Add User" />
+            </form>
+        </div>
+
+        <div style="display: block; float: left; width: 240px; margin-right: 100px;">
+            <h2>New Task</h2>
+            <form id="addTaskForm">
+                <label for="name">Name:</label><br />
+                <input type="text" name="name" /><br />
+                <label for="description">Description:</label><br />
+                <input type="text" name="description" /><br />
+                <label for="link">Link:</label><br />
+                <input type="text" name="link" /><br />
+                <label for="dayDue">Day Due:</label><br />
+                <input type="text" name="dayDue" /><br />
+                <label for="weekDue">Week Due:</label><br />
+                <input type="text" name="weekDue" /><br />
+
+                <input type="submit" name="submit" value="Add Task" />
+            </form>
+        </div>
+
+    </div>
     
     <script src="api.js"></script>
     <script src="index.js"></script>
